@@ -8,7 +8,8 @@
     }
     &__list{
         display: flex;
-        justify-content: space-between;     
+        justify-content: space-between;
+        padding-left: 0;     
         li{
             list-style: none;
             margin: 5px 0;
@@ -31,6 +32,7 @@
 .wrapper{
     margin:  0 auto;   
     max-width: 1620px;
+    padding: 0 10px;
     &--flex{
         display: flex;
         justify-content: space-between;
@@ -63,3 +65,100 @@
         }
     }
 }
+
+.middleBar{
+    padding: 24px 0;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__search{                      
+        position: relative;
+        width: 30%;
+        input{
+            padding: 15px 20px; 
+            padding-left: 42px; 
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            &::placeholder{
+                font-size: 14px;
+            font-weight: 500;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 17px;
+            background-image: url('../../../assets/search.png');
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__location{
+        position: relative;
+        padding-left: 27px;
+        margin-right: 55px;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-image: url('../../../assets/location.png');
+            width: 17px;
+            height: 25px;
+            
+        }
+    }
+    &__cart{
+        display: flex;
+        &Icon{
+            position: relative;
+            
+            
+        }
+        &Right{
+            margin-left: 15px;
+        }
+        &Confirm{
+            color: #E8AA31;
+            font-weight: 500;
+        }
+        &Number{
+            background-color: #E8AA31;
+            color: #FFFFFF;
+            font-weight: 500;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            font-size: 9px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            top: 0;
+            right: -4px;
+        }
+    }
+    &__phone{
+        margin-right: 56px;
+        p{
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+        &Text{
+            color: #E8AA31;
+            
+        }
+    }
+    &__favorite{
+        margin-right: 30px;
+    }
+    
+}                       
