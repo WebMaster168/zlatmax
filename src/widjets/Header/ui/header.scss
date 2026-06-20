@@ -162,3 +162,28 @@
     }
     
 }                       
+.navigation{
+    background: #141414;
+    &__list{
+        
+        li{
+            
+            a{
+                color: #FFFFFF;
+                padding-bottom: 4px;
+                transition: all 0.4s ease-in-out;
+                &:hover{
+                    color: #E8AA31;
+                    border-bottom: 3px solid #E8AA31;
+
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+        margin: 0;
+        padding: 20px 0;
+    }
+}

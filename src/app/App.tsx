@@ -1,7 +1,8 @@
 //import { useState } from 'react'
 
 import './App.css'
-import { Header } from './Layout/Header'
+import { Header } from '../widjets/Header'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   
@@ -9,6 +10,10 @@ function App() {
   return (
     <>
       <Header />
+
+      <main>
+        <Outlet />
+      </main>
     </>
   )
 }

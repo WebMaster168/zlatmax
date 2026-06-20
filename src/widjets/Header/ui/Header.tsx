@@ -1,4 +1,5 @@
 import MiddleBar from "./MiddleBar";
+import NavBar from "./NavBar";
 import TopBar from "./TopBar";
 import './header.scss'
 
@@ -12,7 +13,9 @@ const Header = () => {
             <div className="header__middle">
                 <MiddleBar />
             </div>
-            
+            <div className="header__bottom">
+                <NavBar />
+            </div>
         </header>
     )
         
