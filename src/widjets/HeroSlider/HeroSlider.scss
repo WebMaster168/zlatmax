@@ -1,19 +1,45 @@
 .hero-slide {
-    min-height: 650px;
+    min-height: 900px;
  
     display: flex;
     align-items: center;
  
-    padding-left: 80px;
+    //padding-left: 80px;
  
-    background-size: cover;
+    
+}
+.hero{
+  background-size: cover;
     background-position: center 0px;
     background-repeat: no-repeat;
 }
- 
+.cards__inner{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 60px;
+  z-index: 330;
+}
+.cards__item{
+  text-align: center;
+  max-width: 290px;
+}
+.cards__item + .cards__item{
+  margin-left: 170px;
+}
+.cards__item p{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+}
 .hero-content {
     max-width: 1200px;
     color: white;
+    position: absolute;
+    top: 100px;
 }
 .hero-content h1 {
     font-size: 48px;
@@ -65,8 +91,8 @@
   .swiper-pagination {
     position: absolute !important;
    
-    left: 80px !important;
-    bottom: 65px !important;
+    left: 100px !important;
+    top: 615px !important;
    
     width: auto !important;
    
@@ -95,8 +121,8 @@
   .hero-counter {
     position: absolute;
    
-    left: 150px;
-    bottom: 52px;
+    left: 30px;
+    top: 600px;
    
     z-index: 10;
    
